@@ -1,7 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { MyButtonLg } from "../MyButtons/MyButtons";
 import React from "react";
-import logo from "../../assets/logo/logo.png";
+import logo from "../../assets/logo/logo-ndc.png";
 import SocialLogin from "../../assets/SocialLogin/SocialLogin";
 import "./AuthenticationForm.css";
 
@@ -10,8 +10,8 @@ const AuthenticationForm = ({ action, error }) => {
 
   return (
     <div className="AuthenticationForm shadow-lg bg-light my-5">
-      <figure className="AuthenticationForm-logo">
-        <img src={logo} alt="logo" className="img-fluid" />
+      <figure className="AuthenticationForm-logo d-flex justify-content-center align-items-center">
+        <img src={logo} alt="logo" className="img-fluid" style={{height:"150px", width:'150px'}} />
       </figure>
       <form onSubmit={action}>
         {pathname === "/signup" && (

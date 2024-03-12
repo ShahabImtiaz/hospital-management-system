@@ -12,7 +12,8 @@ import "./Booking.css";
 
 const Booking = () => {
   const { id } = useParams();
-  const [service] = UseService(id);
+  const service = UseService(id);
+  console.log('data:',service)
   const [user] = useAuthState(auth);
   const [date, SetDate] = useState("");
   const [time, SetTime] = useState("");

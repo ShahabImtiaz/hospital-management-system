@@ -1,11 +1,12 @@
 [
-    {
-        "name":"Diagnodfdfdgstics",
-        "description":"Phasellus venenatis porta rhoncus. Integer et viverra felis.",
-        "thumb":"https://i.ibb.co/MZC8Ym9/s7.png",
-        "consultingFee":90,
-        "bookingFee":"10",
-         "slots": [
+  {
+    "_id": "62b9935be4de774a1e2637be",
+    "name": "Diagnodfdfdgstics",
+    "description": "Phasellus venenatis porta rhoncus. Integer et viverra felis.",
+    "thumb": "https://i.ibb.co/MZC8Ym9/s7.png",
+    "consultingFee": 90,
+    "bookingFee": "10",
+    "slots": [
       "08.00 AM - 08.30 AM",
       "08.30 AM - 09.00 AM",
       "09.00 AM - 9.30 AM",
@@ -23,16 +24,15 @@
       "4.00 PM - 4.30 PM",
       "4.30 PM - 5.00 PM"
     ]
-
-        
-    },
-    {
-        "name":"Treatment",
-        "description":"Phasellus venenatis porta rhoncus. Integer et viverra felis.",
-        "thumb":"https://i.ibb.co/x8bL0BS/s1.png",
-        "consultingFee":80,
-        "bookingFee":"10",
-         "slots": [
+  },
+  {
+    "_id": "62b9935be4de774a1e2637bf",
+    "name": "Treatment",
+    "description": "Phasellus venenatis porta rhoncus. Integer et viverra felis.",
+    "thumb": "https://i.ibb.co/x8bL0BS/s1.png",
+    "consultingFee": 80,
+    "bookingFee": "10",
+    "slots": [
       "08.00 AM - 08.30 AM",
       "08.30 AM - 09.00 AM",
       "09.00 AM - 9.30 AM",
@@ -50,14 +50,15 @@
       "4.00 PM - 4.30 PM",
       "4.30 PM - 5.00 PM"
     ]
-    },
-    {
-        "name":"Surgery",
-        "description":"Phasellus venenatis porta rhoncus. Integer et viverra felis.",
-        "thumb":"https://i.ibb.co/vJG5CRq/s3.png",
-        "consultingFee":70,
-        "bookingFee":"10",
-         "slots": [
+  },
+  {
+    "_id": "62b9935be4de774a1e2637c1",
+    "name": "Emergency",
+    "description": "Phasellus venenatis porta rhoncus. Integer et viverra felis.",
+    "thumb": "https://i.ibb.co/mXtLvg2/s4.png",
+    "consultingFee": 60,
+    "bookingFee": "10",
+    "slots": [
       "08.00 AM - 08.30 AM",
       "08.30 AM - 09.00 AM",
       "09.00 AM - 9.30 AM",
@@ -75,14 +76,15 @@
       "4.00 PM - 4.30 PM",
       "4.30 PM - 5.00 PM"
     ]
-    },
-    {
-        "name":"Emergency",
-        "description":"Phasellus venenatis porta rhoncus. Integer et viverra felis.",
-        "thumb":"https://i.ibb.co/mXtLvg2/s4.png",
-        "consultingFee":60,
-        "bookingFee":"10",
-         "slots": [
+  },
+  {
+    "_id": "62b9935be4de774a1e2637c2",
+    "name": "Vaccine",
+    "description": "Phasellus venenatis porta rhoncus. Integer et viverra felis.",
+    "thumb": "https://i.ibb.co/Jk11RjT/s5.png",
+    "consultingFee": 50,
+    "bookingFee": "10",
+    "slots": [
       "08.00 AM - 08.30 AM",
       "08.30 AM - 09.00 AM",
       "09.00 AM - 9.30 AM",
@@ -100,14 +102,15 @@
       "4.00 PM - 4.30 PM",
       "4.30 PM - 5.00 PM"
     ]
-    },
-    {
-        "name":"Vaccine",
-        "description":"Phasellus venenatis porta rhoncus. Integer et viverra felis.",
-        "thumb":"https://i.ibb.co/Jk11RjT/s5.png",
-        "consultingFee":50,
-        "bookingFee":"10",
-         "slots": [
+  },
+  {
+    "_id": "62b9935be4de774a1e2637c3",
+    "name": "Qualified Doctors",
+    "description": "Phasellus venenatis porta rhoncus. Integer et viverra felis.",
+    "thumb": "https://i.ibb.co/RyfLMdN/s6.png",
+    "consultingFee": 40,
+    "bookingFee": "10",
+    "slots": [
       "08.00 AM - 08.30 AM",
       "08.30 AM - 09.00 AM",
       "09.00 AM - 9.30 AM",
@@ -125,14 +128,15 @@
       "4.00 PM - 4.30 PM",
       "4.30 PM - 5.00 PM"
     ]
-    },
-    {
-        "name":"Qualified Doctors",
-        "description":"Phasellus venenatis porta rhoncus. Integer et viverra felis.",
-        "thumb":"https://i.ibb.co/RyfLMdN/s6.png",
-        "consultingFee":40,
-        "bookingFee":"10",
-         "slots": [
+  },
+  {
+    "_id": "62b9935be4de774a1e2637c0",
+    "name": "Surgery",
+    "description": "Phasellus venenatis porta rhoncus. Integer et viverra felis.",
+    "thumb": "https://i.ibb.co/vJG5CRq/s3.png",
+    "consultingFee": 70,
+    "bookingFee": "10",
+    "slots": [
       "08.00 AM - 08.30 AM",
       "08.30 AM - 09.00 AM",
       "09.00 AM - 9.30 AM",
@@ -150,5 +154,5 @@
       "4.00 PM - 4.30 PM",
       "4.30 PM - 5.00 PM"
     ]
-    }
+  }
 ]

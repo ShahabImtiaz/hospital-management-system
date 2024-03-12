@@ -25,7 +25,7 @@ const HeroBanner = () => {
           <div className="col-xl-7 col-lg-7 col-md-6 col-sm-6 col-12">
             <div className="hero-banner-content-left">
               <h6>We Provide All Health Care Solution</h6>
-              <h1>Protect Your Health And Take Care To Of Your Health</h1>
+              <h1>Healthcare is not just a profession; it's a calling to serve humanity.</h1>
               <MyButtonLg
                 action={() => navigate("/about")}
                 className={"hero-btn"}

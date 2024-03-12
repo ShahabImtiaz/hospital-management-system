@@ -4,25 +4,25 @@ import Footer from "../../Components/Footer/Footer";
 import Header from "../../Components/Header/Header";
 import { GoLocation } from "react-icons/go";
 import { MdContactMail } from "react-icons/md";
-import { toast } from "react-toastify";
+// import { toast } from "react-toastify";
 
 import "./ContactUs.css";
 
 const ContactUs = () => {
-  const handleSendMsg = (e) => {
-    e.preventDefault();
-    toast.success("Message Send !", {
-      position: toast.POSITION.BOTTOM_CENTER,
-    });
-    e.target.reset();
-  };
+  // const handleSendMsg = (e) => {
+  //   e.preventDefault();
+  //   toast.success("Message Send !", {
+  //     position: toast.POSITION.BOTTOM_CENTER,
+  //   });
+  //   e.target.reset();
+  // };
 
   return (
     <>
       <Header />
       <Banner page={"contact us"} />
-      <div className="container mt-5 section contact-section shadow-lg bg-light">
-        <div className="contact-form ">
+      <div className="container mt-5 section contact-section shadow-lg bg-light d-flex justify-content-center align-items-center">
+        {/* <div className="contact-form ">
           <form onSubmit={handleSendMsg}>
             <div className="c-group">
               <label htmlFor="name">name</label>
@@ -42,7 +42,7 @@ const ContactUs = () => {
             </div>
             <input type="submit" value={"SEND"} className="msg-btn" />
           </form>
-        </div>
+        </div> */}
         <div className="contact-info">
           <div className="c-info-heading">Contact Us For Any Information</div>
           {/* info */}
@@ -65,7 +65,7 @@ const ContactUs = () => {
 
             <p>
               <span>asadsuzan7@gmail.com</span>
-              <span>(+880) 1414010594</span>
+              <span>(+92) 3334882342</span>
             </p>
           </div>
           {/* info */}

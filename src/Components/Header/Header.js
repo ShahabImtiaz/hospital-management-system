@@ -1,22 +1,22 @@
-import { NavLink, useNavigate } from "react-router-dom";
-import { MyButtonLg } from "../MyButtons/MyButtons";
+import { NavLink } from "react-router-dom";
+
 import { useEffect } from "react";
 import { useState } from "react";
-import { useAuthState } from "react-firebase-hooks/auth";
-import { signOut } from "firebase/auth";
+
+
 
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
+
 import logo from "../../assets/logo/logo-ndc.png";
-import auth from "../../firebaseConfig";
+
 import "./Header.css";
 
 function Header() {
   const [sticky, setSticky] = useState(false);
-  const navigate = useNavigate();
-  const [user] = useAuthState(auth);
+  // const navigate = useNavigate();
+  // const [user] = useAuthState(auth);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -55,12 +55,12 @@ function Header() {
               >
                 service
               </NavLink>
-              <NavLink
+              {/* <NavLink
                 className={"text-uppercase text-decoration-none"}
                 to="/blog"
               >
                 blog
-              </NavLink>
+              </NavLink> */}
               <NavLink
                 className={"text-uppercase text-decoration-none"}
                 to="/contact"
@@ -68,51 +68,14 @@ function Header() {
                 contact
               </NavLink>
 
-              <NavLink
+              {/* <NavLink
                 className={"text-uppercase text-decoration-none"}
                 to="/dashboard/my_Appointments"
               >
                 Appointments
-              </NavLink>
+              </NavLink> */}
 
-              {user ? (
-                <NavDropdown title={user?.displayName} id="basic-nav-dropdown">
-                  <NavLink to={"/dashboard/profile"}>profile</NavLink>
-                  <NavLink to={"/dashboard/my_Appointments"}>dashboard</NavLink>
-                  {/* <NavDropdown.Divider /> */}
-                  <MyButtonLg
-                    action={() => {
-                      signOut(auth);
-                      localStorage.removeItem("accessToken");
-                    }}
-                    className={"header-btn"}
-                    style={{
-                      width: "100%",
-                      padding: "10px 5px",
-                      background: "#1f2278"
-
-                    }}
-                  >
-                    {" "}
-                    signOut
-                  </MyButtonLg>
-                </NavDropdown>
-              ) : (
-                <MyButtonLg
-                  action={() => navigate("/login")}
-                  className={"header-btn"}
-                  style={{
-                    width: "150px",
-                    padding: "10px 5px",
-                    background: "#e1e2f6",
-                    color: "#1f2278"
-                    
-                  }}
-                >
-                  {" "}
-                  login
-                </MyButtonLg>
-              )}
+            
             </Nav>
           </Navbar.Collapse>
         </Container>

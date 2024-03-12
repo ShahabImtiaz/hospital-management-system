@@ -1,8 +1,8 @@
 import React from "react";
-import { UseServices } from "../../hooks";
-// import { MyButtonLg } from "../MyButtons/MyButtons";
-// import { useNavigate } from "react-router-dom";
-import "./ServiceCard.css";
+import { Useblogss } from "../../hooks";
+import { MyButtonLg } from "../MyButtons/MyButtons";
+import { useNavigate } from "react-router-dom";
+import "./blogsCard.css";
 import Loading from "../Loading/Loading";
 import {
   OverlayBg1,
@@ -13,23 +13,23 @@ import {
   OverlayBg8,
 } from "../OverlayBg/OverlayBg";
 
-const ServiceCard = () => {
-  const [services] = UseServices();
-  // const navigate = useNavigate();
-  if (services.length === 0) {
+const BlogsCard = () => {
+  const [blogs] = UseBlogs();
+  const navigate = useNavigate();
+  if (blogs.length === 0) {
     return <Loading />;
   }
   return (
-    <div className="all-services position-relative section">
+    <div className="all-blogs position-relative section">
       <div className="container">
-        <div className="services-wrapper">
-          {services.map((service) => {
+        <div className="blogs-wrapper">
+          {blogs.map((blogs) => {
             const { name, description, thumb, consultingFee, bookingFee, _id } =
-              service;
+              blogs;
             return (
-              <div key={_id} className="service-item shadow-lg">
+              <div key={_id} className="blogs-item shadow-lg">
                 <figure>
-                  <img src={thumb} alt="service-icon" className="img-fluid" />
+                  <img src={thumb} alt="blogs-icon" className="img-fluid" />
                 </figure>
                 <div>
                   <h5>{name}</h5>
@@ -56,4 +56,4 @@ const ServiceCard = () => {
   );
 };
 
-export default ServiceCard;
+export default BlogsCard;

@@ -103,18 +103,7 @@ const ServiceSlide = () => {
                       </div>
                       <p>{description}</p>
                     </div>
-                    <MyButtonLg
-                      className={"book-now-btn"}
-                      action={() => navigate(`service/${_id}`)}
-                      style={{
-                        width: "150px",
-                        padding: "10px 0",
-                        background: "#e1e2f6",
-                        color: "#565acf",
-                      }}
-                    >
-                      book now
-                    </MyButtonLg>
+                   
                   </div>
                 </SwiperSlide>
               );

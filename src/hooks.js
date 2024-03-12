@@ -3,7 +3,7 @@ const { useState, useEffect } = require("react");
 const UseServices = () => {
   const [services, setServices] = useState([]);
   useEffect(() => {
-    fetch("https://meditro-server-production.up.railway.app/services")
+    fetch("services.json")
       .then((res) => res.json())
       .then((data) => setServices(data));
   }, []);
@@ -33,15 +33,24 @@ const UseFacilities = () => {
 };
 const UseService = (id) => {
   const [service, setService] = useState({});
-  const url = `https://meditro-server-production.up.railway.app/service/${id}`;
+  const url = `services.json`;
 
   useEffect(() => {
     fetch(url)
       .then((res) => res.json())
-      .then((data) => setService(data));
-  }, [url]);
+      .then((data) => data.find((item)=>item?._id === id));
+  }, [id,url]);
 
   return [service, setService];
+};
+const UseBlogs = () => {
+  const [blogs, setBlogs] = useState([]);
+  useEffect(() => {
+    fetch("blogs.json")
+      .then((res) => res.json())
+      .then((data) => setBlogs(data));
+  }, []);
+  return [blogs, setBlogs];
 };
 const UseToken = (user) => {
   const [token, setToken] = useState();
@@ -107,4 +116,5 @@ export {
   UseService,
   UseToken,
   UseAdmin,
+  UseBlogs
 };
