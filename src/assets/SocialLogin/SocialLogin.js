@@ -4,12 +4,12 @@ import { FcGoogle } from "react-icons/fc";
 import { MyButtonLg } from "../../Components/MyButtons/MyButtons";
 import { useSignInWithGoogle } from "react-firebase-hooks/auth";
 import auth from "../../firebaseConfig";
-import Loading from "../../Components/Loading/Loading";
+
 import { UseToken } from "../../hooks";
 import { useLocation, useNavigate } from "react-router-dom";
 
 const SocialLogin = () => {
-  const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
+  const [signInWithGoogle, user, loading] = useSignInWithGoogle(auth);
   const [token] = UseToken(user);
   let navigate = useNavigate();
   let location = useLocation();

@@ -2,9 +2,9 @@ import React from "react";
 import "./Banner.css";
 import { AiOutlineHome } from "react-icons/ai";
 import { useLocation } from "react-router-dom";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import {
-  OverlayBg1,
+
   OverlayBg2,
   OverlayBg3,
   OverlayBg4,

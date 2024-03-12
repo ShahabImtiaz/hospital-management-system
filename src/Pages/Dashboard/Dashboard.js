@@ -8,17 +8,17 @@ import { CgProfile } from "react-icons/cg";
 import { MdDashboard } from "react-icons/md";
 import { HiOutlineMenuAlt2 } from "react-icons/hi";
 import { AiOutlineClose } from "react-icons/ai";
-import { MdDarkMode } from "react-icons/md";
+
 import { CgDarkMode } from "react-icons/cg";
 import { FiLogOut } from "react-icons/fi";
 import { useState } from "react";
-import userThumb from "../../assets/about-img/about1.jpg";
+
 import { signOut } from "firebase/auth";
 import { UseAdmin } from "../../hooks";
 
 const Dashboard = () => {
   const [user] = useAuthState(auth);
-  const [isAdmin, isLoading] = UseAdmin(user);
+  const [isAdmin] = UseAdmin(user);
   const [active, setActive] = useState(false);
   const [darkMood, setDarkMood] = useState(false);
   const { pathname } = useLocation();

@@ -15,7 +15,7 @@ import { UseToken } from "../hooks";
 const Login = () => {
   let navigate = useNavigate();
   let location = useLocation();
-  let [VerifiedUser, isLoading] = useAuthState(auth);
+  let [ isLoading] = useAuthState(auth);
 
   let from = location.state?.from?.pathname || "/";
 

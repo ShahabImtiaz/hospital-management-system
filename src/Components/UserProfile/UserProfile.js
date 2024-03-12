@@ -1,8 +1,8 @@
-import { async } from "@firebase/util";
+
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
-import { useAuthState, useUpdateProfile } from "react-firebase-hooks/auth";
+import { useAuthState } from "react-firebase-hooks/auth";
 import auth from "../../firebaseConfig";
 import "./UserProfile.css";
 import { toast } from "react-toastify";

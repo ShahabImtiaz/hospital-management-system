@@ -6,7 +6,7 @@ import overlayIcon4 from "../../assets/overlay-icons/overlay4.png";
 import overlayIcon5 from "../../assets/overlay-icons/overlay5.png";
 import overlayIcon6 from "../../assets/overlay-icons/overlay6.png";
 import overlayIcon7 from "../../assets/overlay-icons/overlay7.png";
-import overlayIcon8 from "../../assets/overlay-icons/overlay8.png";
+
 import overlayIcon11 from "../../assets/overlay-icons/overlay11.png";
 
 import "./OverlayBg.css";

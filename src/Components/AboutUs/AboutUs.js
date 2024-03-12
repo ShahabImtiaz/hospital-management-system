@@ -1,12 +1,10 @@
 import {
-  OverlayBg1,
+ 
   OverlayBg2,
   OverlayBg3,
-  OverlayBg4,
-  OverlayBg5,
-  OverlayBg6,
+
   OverlayBg7,
-  OverlayBg8,
+
 } from "../OverlayBg/OverlayBg";
 
 import React from "react";
