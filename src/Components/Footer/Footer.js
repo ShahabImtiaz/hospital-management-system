@@ -24,8 +24,7 @@ const Footer = () => {
                 <img src={logo} alt="meditro" className="f-logo" />
               </div>
               <p className="f-des">
-                Lorem ipsum is dolor sit amet, csectetur adipiscing elit, dolore
-                smod tempor incididunt ut labore et.
+              In hospitals, hope thrives, compassion abounds, and healing is our mission. Here, expertise meets empathy, and every patient is embraced with care. Together, we navigate journeys from illness to wellness, ensuring no one walks alone.
               </p>
               <span className="pb-2 d-inline-block">Contact Us</span>
               <h3 className="">+92 3334882342</h3>
