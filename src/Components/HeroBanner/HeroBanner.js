@@ -8,7 +8,7 @@ import {
 } from "../OverlayBg/OverlayBg";
 import React from "react";
 import Header from "../Header/Header";
-import heroThumb from "../../assets/hero-img/hero-min.png";
+import heroThumb from "../../assets/doctor-illustration.png";
 import "./HeroBanner.css";
 
 const HeroBanner = () => {

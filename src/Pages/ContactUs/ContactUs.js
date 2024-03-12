@@ -52,8 +52,7 @@ const ContactUs = () => {
             </div>
 
             <p>
-              Contact Us For Any Informations Location 2005 Stokes Isle Apt.
-              896, Venaville 10010, USA
+              NDC National Diagnostic Complex
             </p>
           </div>
           {/* info */}
@@ -64,7 +63,7 @@ const ContactUs = () => {
             </div>
 
             <p>
-              <span>asadsuzan7@gmail.com</span>
+              <span>supportndc@gmail.com</span>
               <span>(+92) 3334882342</span>
             </p>
           </div>
